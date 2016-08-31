@@ -1,4 +1,4 @@
-Task System and status panel for Joomla! Administrator
+Task System and status panel for Joomla! Administrator [![Build Status](https://travis-ci.org/InstaWebCare/joomla-admin-task-system.svg?branch=master)](https://travis-ci.org/InstaWebCare/joomla-admin-task-system)
 -----
 
 This extension is useful for the bigger websites which is being managed by a team of people.
