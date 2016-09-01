@@ -115,7 +115,7 @@ class AdmintaskTabletask extends JTable
 			{
 				foreach ($jaccess->getData() as $group => $allow)
 				{
-					$actions[$group] = ((bool)$allow);
+					$actions[$group] = ((bool) $allow);
 				}
 			}
 

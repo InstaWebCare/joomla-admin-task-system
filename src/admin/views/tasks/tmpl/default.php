@@ -260,7 +260,7 @@ if (!empty($this->extra_sidebar))
 					<?php echo JHtml::_('jgrid.checkedout', $i, $item->editor, $item->checked_out_time, 'tasks.', $canCheckin); ?>
 				<?php endif; ?>
 				<?php if ($canEdit) : ?>
-					<a href="<?php echo JRoute::_('index.php?option=com_admintask&task=task.edit&id='.(int) $item->id); ?>">
+					<a href="<?php echo JRoute::_('index.php?option=com_admintask&task=task.edit&id=' . (int) $item->id); ?>">
 					<?php echo $this->escape($item->title); ?></a>
 				<?php else : ?>
 					<?php echo $this->escape($item->title); ?>

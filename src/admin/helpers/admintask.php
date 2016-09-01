@@ -73,9 +73,11 @@ public static function getActions()
 	$actions = array(
 	'core.admin', 'core.manage', 'core.create', 'core.edit', 'core.edit.own', 'core.edit.state', 'core.delete');
 
-	foreach($actions as $action){
+	foreach ($actions as $action)
+	{
 			$result->set($action, $user->authorise($action, $assetName));
 	}
+
 	return $result;
 }
 }
