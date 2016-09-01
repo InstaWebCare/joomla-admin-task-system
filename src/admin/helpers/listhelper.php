@@ -17,7 +17,17 @@ defined('_JEXEC') or die;
  */
 abstract class JHtmlListhelper
 {
-	static function toggle ($value = 0, $view, $field, $i)
+	/**
+	 * [toggle description]
+	 *
+	 * @param   integer  $value  [description]
+	 * @param   [type]   $view   [description]
+	 * @param   [type]   $field  [description]
+	 * @param   [type]   $i      [description]
+	 *
+	 * @return  [type]           [description]
+	 */
+	static function toggle($value = 0, $view , $field , $i)
 	{
 		$states = array(
 			0 => array('icon-remove', JText::_('Toggle'), 'inactive btn-danger'),
