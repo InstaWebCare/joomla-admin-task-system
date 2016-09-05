@@ -1,9 +1,9 @@
 <?php
 /**
- * @version    CVS: 1.0.0
+ * @version    1.0.0
  * @package    Com_Admintask
- * @author     Tasolglobal <testing@tasolglobal.com>
- * @copyright  2016 Tasolglobal
+ * @author     __COMPONENT_CONTACT__
+ * @copyright  __COMPONENT_COPYRIGHT__
  * @license    GNU General Public License version 2 or later; see LICENSE.txt
  */
 
@@ -97,7 +97,6 @@ if (!empty($this->extra_sidebar))
 }
 
 ?>
-
 <form action="<?php echo JRoute::_('index.php?option=com_admintask&view=tasks'); ?>" method="post"
 	  name="adminForm" id="adminForm">
 	<?php if (!empty($this->sidebar)): ?>
@@ -199,8 +198,6 @@ if (!empty($this->extra_sidebar))
 				<th class='left'>
 				<?php echo JHtml::_('grid.sort',  'COM_ADMINTASK_TASKS_COMMENTS_THREAD', 'a.`comments_thread`', $listDirn, $listOrder); ?>
 				</th>
-
-
 				</tr>
 				</thead>
 				<tfoot>

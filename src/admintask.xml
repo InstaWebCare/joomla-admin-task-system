@@ -2,12 +2,12 @@
 <extension type="component" version="3.0" method="upgrade">
     <name>com_admintask</name>
     <creationDate>2016-08-31</creationDate>
-    <copyright>2016 Tasolglobal</copyright>
+    <copyright>__COMPONENT_COPYRIGHT__</copyright>
     <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
     <author>Tasolglobal</author>
     <authorEmail></authorEmail>
     <authorUrl></authorUrl>
-    <version>CVS: 1.0.0</version>
+    <version>1.0.0</version>
     <description></description>
 <install> <!-- Runs on install -->
         <sql>

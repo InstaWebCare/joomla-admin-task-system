@@ -1,9 +1,9 @@
 <?php
 /**
- * @version    CVS: 1.0.0
+ * @version    1.0.0
  * @package    Com_Admintask
- * @author     Tasolglobal <testing@tasolglobal.com>
- * @copyright  2016 Tasolglobal
+ * @author     __COMPONENT_CONTACT__
+ * @copyright  __COMPONENT_COPYRIGHT__
  * @license    GNU General Public License version 2 or later; see LICENSE.txt
  */
 // No direct access
@@ -52,43 +52,6 @@ $document->addStyleSheet(JUri::root() . 'media/com_admintask/css/form.css');
 		<?php echo JHtml::_('bootstrap.addTab', 'myTab', 'general', JText::_('COM_ADMINTASK_TITLE_TASK', true)); ?>
 		<div class="row-fluid">
 			<div class="span10 form-horizontal">
-				<fieldset class="adminform">
-		<input type="hidden" name="jform[id]" value="<?php echo $this->item->id; ?>" />
-				<?php echo $this->form->renderField('title'); ?>
-				<?php echo $this->form->renderField('description'); ?>
-				<?php echo $this->form->renderField('state'); ?>
-				<?php echo $this->form->renderField('assigned_to'); ?>
-				<?php echo $this->form->renderField('assignee'); ?>
-				<input type="hidden" name="jform[ordering]" value="<?php echo $this->item->ordering; ?>" />
-				<?php echo $this->form->renderField('category');
-
-				if (empty($this->item->created_by))
-				{
-				?>
-					<input type="hidden" name="jform[created_by]" value="<?php echo JFactory::getUser()->id; ?>" />
-
-				<?php
-				}
-				else{ ?>
-					<input type="hidden" name="jform[created_by]" value="<?php echo $this->item->created_by; ?>" />
-
-				<?php
-				}
-				echo $this->form->renderField('due_date');
-				?>
-				<input type="hidden" name="jform[priority]" value="<?php echo $this->item->priority; ?>" />
-				<?php echo $this->form->renderField('comments_thread');
-
-				if ($this->state->params->get('save_history', 1)) :
-				?>
-					<div class="control-group">
-						<div class="control-label"><?php echo $this->form->getLabel('version_note'); ?></div>
-						<div class="controls"><?php echo $this->form->getInput('version_note'); ?></div>
-					</div>
-				<?php
-				endif;
-				?>
-				</fieldset>
 			</div>
 		</div>
 		<?php echo JHtml::_('bootstrap.endTab'); ?>

@@ -1,10 +1,9 @@
 <?php
-
 /**
- * @version    CVS: 1.0.0
+ * @version    1.0.0
  * @package    Com_Admintask
- * @author     Tasolglobal <testing@tasolglobal.com>
- * @copyright  2016 Tasolglobal
+ * @author     __COMPONENT_CONTACT__
+ * @copyright  __COMPONENT_COPYRIGHT__
  * @license    GNU General Public License version 2 or later; see LICENSE.txt
  */
 // No direct access
@@ -13,7 +12,7 @@ defined('_JEXEC') or die;
 /**
  * Class AdmintaskController
  *
- * @since  1.6
+ * @since  1.0
  */
 class AdmintaskController extends JControllerLegacy
 {

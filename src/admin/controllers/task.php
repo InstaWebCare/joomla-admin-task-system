@@ -1,9 +1,9 @@
 <?php
 /**
- * @version    CVS: 1.0.0
+ * @version    1.0.0
  * @package    Com_Admintask
- * @author     Tasolglobal <testing@tasolgloblal.com>
- * @copyright  2016 Tasolglobal
+ * @author     __COMPONENT_CONTACT__
+ * @copyright  __COMPONENT_COPYRIGHT__
  * @license    GNU General Public License version 2 or later; see LICENSE.txt
  */
 
@@ -15,10 +15,8 @@ jimport('joomla.application.component.controllerform');
 /**
  * Task controller class.
  *
- * @since  1.6
+ * @since  1.0
  */
-
-
 class AdmintaskControllerTask extends JControllerForm
 {
 /**
@@ -27,9 +25,9 @@ class AdmintaskControllerTask extends JControllerForm
  * @throws Exception
 */
 
-public function __construct()
-{
-		$this->view_list = 'tasks';
-		parent::__construct();
-}
+	public function __construct()
+	{
+			$this->view_list = 'tasks';
+			parent::__construct();
+	}
 }
