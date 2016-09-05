@@ -1,6 +1,5 @@
 <?php
 /**
- * @version    1.0.0
  * @package    Com_Admintask
  * @author     __COMPONENT_CONTACT__
  * @copyright  __COMPONENT_COPYRIGHT__
