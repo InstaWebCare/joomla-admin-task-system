@@ -67,11 +67,13 @@ $document->addStyleSheet(JUri::root() . 'media/com_admintask/css/form.css');
 				?>
 					<input type="hidden" name="jform[created_by]" value="<?php echo JFactory::getUser()->id; ?>" />
 
-				<?php}
+				<?php
+				}
 				else{ ?>
 					<input type="hidden" name="jform[created_by]" value="<?php echo $this->item->created_by; ?>" />
 
-				<?php}
+				<?php
+				}
 				echo $this->form->renderField('due_date');
 				?>
 				<input type="hidden" name="jform[priority]" value="<?php echo $this->item->priority; ?>" />
