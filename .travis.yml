@@ -16,3 +16,5 @@ before_script:
 
 script:
   - if [[ $RUN_PHPCS == "yes" ]]; then vendor/bin/phpcs --report=full --extensions=php -p --standard=.tmp/Joomla src; fi
+  - vendor/bin/phpcpd src/ -v
+  - vendor/bin/phpmd src/ text unusedcode,naming

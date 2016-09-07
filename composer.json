@@ -9,6 +9,8 @@
         "issues":"https://github.com/InstaWebCare/joomla-admin-task-system/issues"
     },
     "require-dev": {
-        "squizlabs/php_codesniffer": "~1.5"
+        "squizlabs/php_codesniffer": "~1.5",
+        "sebastian/phpcpd": "*",
+        "phpmd/phpmd": "^2.4"
     }
 }
