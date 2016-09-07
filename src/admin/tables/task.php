@@ -43,11 +43,6 @@ class AdmintaskTabletask extends JTable
 		$input = JFactory::getApplication()->input;
 		$task = $input->getString('task', '');
 
-		if ($array['id'] == 0)
-		{
-			$array['created_by'] = JFactory::getUser()->id;
-		}
-
 		// Support for empty date field: due_date
 		if ($array['due_date'] == '0000-00-00')
 		{

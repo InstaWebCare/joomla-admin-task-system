@@ -122,11 +122,6 @@ class AdmintaskModelTasks extends JModelList
 		);
 		$query->from('`#__admintask_tasks` AS a');
 
-
-		// Join over the user field 'created_by'
-		$query->select('`created_by`.name AS `created_by`');
-		$query->join('LEFT', '#__users AS `created_by` ON `created_by`.id = a.`created_by`');
-
 		// Filter by published state
 		$published = $this->getState('filter.state');
 
