@@ -12,6 +12,9 @@ php:
 before_script:
   # Make sure all dev dependencies are installed
   - composer install
+  - git clone https://github.com/joomla/coding-standards.git .tmp/Joomla/ --depth 1
 
 script:
-  - if [[ $RUN_PHPCS == "yes" ]]; then vendor/bin/phpcs --report=full --extensions=php -p --standard=build/phpcs/Joomla src; fi
+  - if [[ $RUN_PHPCS == "yes" ]]; then vendor/bin/phpcs --report=full --extensions=php -p --standard=.tmp/Joomla src; fi
+  - vendor/bin/phpcpd src/ -v
+  - vendor/bin/phpmd src/ text unusedcode,naming
