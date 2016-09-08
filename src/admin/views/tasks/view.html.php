@@ -124,6 +124,7 @@ class AdmintaskViewTasks extends JViewLegacy
 			}
 		}
 
+
 		// Set sidebar action - New in 3.0
 		JHtmlSidebar::setAction('index.php?option=com_admintask&view=tasks');
 
