@@ -124,11 +124,6 @@ class AdmintaskViewTasks extends JViewLegacy
 			}
 		}
 
-		if ($canDo->get('core.admin'))
-		{
-			JToolBarHelper::preferences('com_admintask');
-		}
-
 		// Set sidebar action - New in 3.0
 		JHtmlSidebar::setAction('index.php?option=com_admintask&view=tasks');
 
