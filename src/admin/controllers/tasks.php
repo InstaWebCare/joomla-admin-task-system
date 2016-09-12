@@ -21,39 +21,6 @@ use Joomla\Utilities\ArrayHelper;
 class AdmintaskControllerTasks extends JControllerAdmin
 {
 	/**
-	 * Method to clone existing Tasks
-	 *
-	 * @return void
-	 */
-	public function duplicate()
-	{
-		// Check for request forgeries
-		Jsession::checkToken() or jexit(JText::_('JINVALID_TOKEN'));
-
-		// Get id(s)
-		$pks = $this->input->post->get('cid', array(), 'array');
-
-		try
-		{
-			if (empty($pks))
-			{
-				throw new Exception(JText::_('COM_ADMINTASK_NO_ELEMENT_SELECTED'));
-			}
-
-			ArrayHelper::toInteger($pks);
-			$model = $this->getModel();
-			$model->duplicate($pks);
-			$this->setMessage(Jtext::_('COM_ADMINTASK_ITEMS_SUCCESS_DUPLICATED'));
-		}
-		catch (Exception $e)
-		{
-			JFactory::getApplication()->enqueueMessage($e->getMessage(), 'warning');
-		}
-
-		$this->setRedirect('index.php?option=com_admintask&view=tasks');
-	}
-
-	/**
 	 * Proxy for getModel.
 	 *
 	 * @param   string  $name    Optional. Model name

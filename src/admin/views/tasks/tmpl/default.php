@@ -88,11 +88,9 @@ $sortFields = $this->getSortFields();
 
 <?php
 
-// Joomla Component Creator code to allow adding non select list filters
-
-if (!empty($this->extra_sidebar))
+if (!empty ($this->extra_sidebar ))
 {
-	$this->sidebar .= $this->extra_sidebar;
+$this->sidebar .= $this->extra_sidebar;
 }
 
 ?>

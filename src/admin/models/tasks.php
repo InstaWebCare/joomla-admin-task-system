@@ -71,10 +71,6 @@ class AdmintaskModelTasks extends JModelList
 		$published = $app->getUserStateFromRequest($this->context . '.filter.state', 'filter_published', '', 'string');
 		$this->setState('filter.state', $published);
 
-		// Load the parameters.
-		$params = JComponentHelper::getParams('com_admintask');
-		$this->setState('params', $params);
-
 		// List state information.
 		parent::populateState('a.title', 'asc');
 	}

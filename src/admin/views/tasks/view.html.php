@@ -64,7 +64,7 @@ class AdmintaskViewTasks extends JViewLegacy
 		$state = $this->get('State');
 		$canDo = AdmintaskHelpersAdmintask::getActions();
 
-		JToolBarHelper::title(JText::_('COM_ADMINTASK_TITLE_TASKS'), 'tasks.png');
+		JToolBarHelper::title(JText::_('COM_ADMINTASK_TITLE_TASKS'), 'generic.png');
 
 		// Check if the form exists before showing the add/edit buttons
 		$formPath = JPATH_COMPONENT_ADMINISTRATOR . '/views/task';

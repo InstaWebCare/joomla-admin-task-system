@@ -33,16 +33,14 @@ class AdmintaskHelpersAdmintask
 	}
 
 	/**
-		* Gets the files attached to an item
-		*
-		* @param   int     $pk     The item's id
-		*
-		* @param   string  $table  The table's name
-		*
-		* @param   string  $field  The field's name
-		*
-		* @return  array  The files
-	*/
+	 * Gets the files attached to an item
+	 *
+	 * @param   int     $pk     The item's id
+	 * @param   string  $table  The table's name
+	 * @param   string  $field  The field's name
+	 *
+	 * @return  array  The files
+	 */
 	public static function getFiles($pk, $table, $field)
 	{
 			$db = JFactory::getDbo();

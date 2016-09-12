@@ -73,7 +73,7 @@ class AdmintaskViewTask extends JViewLegacy
 
 		$canDo = AdmintaskHelpersAdmintask::getActions();
 
-		JToolBarHelper::title(JText::_('COM_ADMINTASK_TITLE_TASK'), 'task.png');
+		JToolBarHelper::title(JText::_('COM_ADMINTASK_TITLE_TASK'), 'generic.png');
 
 		// If not checked out, can save the item.
 		if (!$checkedOut && ($canDo->get('core.edit') || ($canDo->get('core.create'))))

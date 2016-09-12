@@ -18,11 +18,11 @@ jimport('joomla.application.component.controllerform');
  */
 class AdmintaskControllerTask extends JControllerForm
 {
-/**
- *  Constructor
- *
- * @throws Exception
-*/
+	/**
+	 *  Constructor
+	 *
+	 * @throws Exception
+	*/
 
 	public function __construct()
 	{
