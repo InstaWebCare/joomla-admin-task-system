@@ -23,7 +23,6 @@ class AdmintaskTabletask extends JTable
 	 */
 	public function __construct(&$db)
 	{
-		JObserverMapper::addObserverClassToClass('JTableObserverContenthistory', 'AdmintaskTabletask', array('typeAlias' => 'com_admintask.task'));
 		parent::__construct('#__admintask_tasks', 'id', $db);
 	}
 
