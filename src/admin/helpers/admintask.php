@@ -33,11 +33,11 @@ class AdmintaskHelpersAdmintask
 	}
 
 	/**
-		* Gets a list of the actions that can be performed.
-		*
-		* @return    JObject
-		*
-		* @since    1.6
+	 * Gets a list of the actions that can be performed.
+	 *
+	 * @return    JObject
+	 *
+	 * @since    1.6
 	 */
 	public static function getActions()
 	{

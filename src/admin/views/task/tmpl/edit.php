@@ -14,9 +14,6 @@ JHtml::_('behavior.formvalidation');
 JHtml::_('formbehavior.chosen', 'select');
 JHtml::_('behavior.keepalive');
 
-// Import CSS
-$document = JFactory::getDocument();
-$document->addStyleSheet(JUri::root() . 'media/com_admintask/css/form.css');
 ?>
 <script type="text/javascript">
 	js = jQuery.noConflict();

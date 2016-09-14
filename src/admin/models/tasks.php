@@ -17,13 +17,13 @@ jimport('joomla.application.component.modellist');
 class AdmintaskModelTasks extends JModelList
 {
 	/**
-		* Constructor.
-		*
-		* @param   array  $config  An optional associative array of configuration settings.
-		*
-		* @see        JController
-		* @since      1.6
-		*/
+	 * Constructor.
+	 *
+	 * @param   array  $config  An optional associative array of configuration settings.
+	 *
+	 * @see        JController
+	 * @since      1.6
+	 */
 	public function __construct($config = array())
 	{
 		if (empty($config['filter_fields']))
