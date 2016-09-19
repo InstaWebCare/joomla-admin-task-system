@@ -93,13 +93,6 @@ class AdmintaskViewTask extends JViewLegacy
 			JToolBarHelper::custom('task.save2copy', 'save-copy.png', 'save-copy_f2.png', 'JTOOLBAR_SAVE_AS_COPY', false);
 		}
 
-		// Button for version control
-
-		if ($this->state->params->get('save_history', 1) && $user->authorise('core.edit'))
-		{
-			JToolbarHelper::versions('com_admintask.task', $this->item->id);
-		}
-
 		if (empty($this->item->id))
 		{
 			JToolBarHelper::cancel('task.cancel', 'JTOOLBAR_CANCEL');
