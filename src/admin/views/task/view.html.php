@@ -8,8 +8,6 @@
 // No direct access
 defined('_JEXEC') or die;
 
-jimport('joomla.application.component.view');
-
 /**
  * View to edit
  *
@@ -71,7 +69,7 @@ class AdmintaskViewTask extends JViewLegacy
 			$checkedOut = false;
 		}
 
-		$canDo = AdmintaskHelpersAdmintask::getActions();
+		$canDo = AdmintaskHelpersMenu::getActions();
 
 		JToolBarHelper::title(JText::_('COM_ADMINTASK_TITLE_TASK'), 'generic.png');
 

@@ -9,8 +9,6 @@
 // No direct access.
 defined('_JEXEC') or die;
 
-jimport('joomla.application.component.modeladmin');
-
 /**
  * Admintask model.
  *
@@ -69,8 +67,10 @@ class AdmintaskModelTask extends JModelAdmin
 
 		// Get the form.
 		$form = $this->loadForm(
-			'com_admintask.task', 'task',
-			array('control' => 'jform',
+			'com_admintask.task',
+			'task',
+			array(
+				'control'   => 'jform',
 				'load_data' => $loadData
 			)
 		);

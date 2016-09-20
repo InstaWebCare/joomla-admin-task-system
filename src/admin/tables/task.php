@@ -8,7 +8,6 @@
 // No direct access
 defined('_JEXEC') or die;
 
-use Joomla\Utilities\ArrayHelper;
 /**
  * task Table class
  *

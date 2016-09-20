@@ -8,8 +8,6 @@
 // No direct access
 defined('_JEXEC') or die;
 
-jimport('joomla.application.component.view');
-
 /**
  * View class for a list of Admintask.
  *
@@ -44,7 +42,7 @@ class AdmintaskViewTasks extends JViewLegacy
 			throw new Exception(implode("\n", $errors));
 		}
 
-		AdmintaskHelpersAdmintask::addSubmenu('tasks');
+		AdmintaskHelpersMenu::addSubmenu('tasks');
 
 		$this->addToolbar();
 
@@ -62,7 +60,7 @@ class AdmintaskViewTasks extends JViewLegacy
 	protected function addToolbar()
 	{
 		$state = $this->get('State');
-		$canDo = AdmintaskHelpersAdmintask::getActions();
+		$canDo = AdmintaskHelpersMenu::getActions();
 
 		JToolBarHelper::title(JText::_('COM_ADMINTASK_TITLE_TASKS'), 'generic.png');
 

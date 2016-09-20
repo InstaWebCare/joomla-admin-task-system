@@ -15,9 +15,6 @@ if (!JFactory::getUser()->authorise('core.manage', 'com_admintask'))
 	throw new Exception(JText::_('JERROR_ALERTNOAUTHOR'));
 }
 
-// Include dependancies
-jimport('joomla.application.component.controller');
-
 JLoader::registerPrefix('Admintask', JPATH_COMPONENT_ADMINISTRATOR);
 
 $controller = JControllerLegacy::getInstance('Admintask');
