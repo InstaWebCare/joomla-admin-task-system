@@ -1,0 +1,62 @@
+/**
+ * @package     com_admintask
+ * @copyright   __COMPONENT_COPYRIGHT__
+ * @license     GNU General Public License version 2 or later; see LICENSE.txt
+ * @author      __COMPONENT_CONTACT__
+ */
+div.list-footer{
+    clear:both;
+    text-decoration: none;
+    text-align: center;
+}
+
+div.list-footer ul{
+    list-style: none;
+    display: inline-block;
+}
+
+div.list-footer ul li{
+    display: inline-block;
+}
+
+div.list-footer div.limit{
+    display: inline-block;
+}
+
+div.list-footer div.counter{
+    display: inline-block;
+}
+
+div.filter-select.hide{
+    display: none;
+}
+
+div.filter-select.show{
+    display: block;
+}
+
+div.filter-search , div.filter-select {
+    clear: both;
+}
+
+div.filter-select .fltlft{
+    float: left;
+    clear: both;
+}
+
+div.field-filter{
+    float: left;
+    margin: 10px;
+}
+
+#filter-bar div.fltrt div.button2-left .blank a {
+    margin-top: 0 !important;
+}
+
+button.open{
+    font-weight: bold;
+}
+
+div.field-filter:first-of-type{
+    margin-left: 0;
+}
