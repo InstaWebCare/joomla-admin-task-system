@@ -48,6 +48,10 @@ JHtml::_('behavior.keepalive');
 		<?php echo JHtml::_('bootstrap.addTab', 'myTab', 'general', JText::_('COM_ADMINTASK_TITLE_TASK', true)); ?>
 		<div class="row-fluid">
 			<div class="span10 form-horizontal">
+			<fieldset class="adminform">
+				<input type="hidden" name="jform[id]" value="<?php echo $this->item->id; ?>" />
+				<?php echo $this->form->renderField('category'); ?>
+			</fieldset>
 			</div>
 		</div>
 		<?php echo JHtml::_('bootstrap.endTab'); ?>
