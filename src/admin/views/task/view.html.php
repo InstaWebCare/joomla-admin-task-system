@@ -69,7 +69,7 @@ class AdmintaskViewTask extends JViewLegacy
 			$checkedOut = false;
 		}
 
-		$canDo = AdmintaskHelpersMenu::getActions();
+		$canDo = AdmintaskHelper::getActions();
 
 		JToolBarHelper::title(JText::_('COM_ADMINTASK_TITLE_TASK'), 'generic.png');
 
