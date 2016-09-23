@@ -42,7 +42,7 @@ class AdmintaskViewTasks extends JViewLegacy
 			throw new Exception(implode("\n", $errors));
 		}
 
-		AdmintaskHelpersMenu::addSubmenu('tasks');
+		AdmintaskHelper::addSubmenu('tasks');
 
 		$this->addToolbar();
 
@@ -60,7 +60,7 @@ class AdmintaskViewTasks extends JViewLegacy
 	protected function addToolbar()
 	{
 		$state = $this->get('State');
-		$canDo = AdmintaskHelpersMenu::getActions();
+		$canDo = AdmintaskHelper::getActions();
 
 		JToolBarHelper::title(JText::_('COM_ADMINTASK_TITLE_TASKS'), 'generic.png');
 
