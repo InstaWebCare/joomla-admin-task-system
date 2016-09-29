@@ -14,7 +14,7 @@ defined('_JEXEC') or die;
  *
  * @since  1.0
  */
-class AdmintaskHelpersMenu
+class AdmintaskHelper
 {
 	/**
 	 * Configure the Linkbar.
@@ -31,6 +31,16 @@ class AdmintaskHelpersMenu
 			'index.php?option=com_admintask&view=tasks',
 			$vName == 'tasks'
 		);
+		JHtmlSidebar::addEntry(
+			JText::_('JCATEGORIES'),
+			"index.php?option=com_categories&extension=com_admintask",
+			$vName == 'categories'
+		);
+
+		if ($vName == 'categories')
+		{
+			JToolBarHelper::title('Admintask: JCATEGORIES (COM_ADMINTASK_TITLE_TASKS)');
+		}
 	}
 
 	/**
